@@ -1,13 +1,15 @@
 
-To run:
-1 clone the project
-2 in terminal go to src/main/java folder
-3 in terminal run
+**To run:**
+- 1 clone the project
+- 2 in terminal go to src/main/java folder
+- 3 in terminal run
+```
 javac com/kbogova/matrices/*.java && java com/kbogova/matrices/Main
-4 observe result in console
+```
+ -4 observe result in console
 
 -----------------------------------------------------------
-Project description
+**Project description**
 
 -function SquareMatrix.multiplyTo() realises the task
 
@@ -19,7 +21,7 @@ and puts information to console
 -main function calls tester.test();
 
 -----------------------------------------------------------
-Задание
+**Задание**
 Программа произведения двух квадратных матриц в многопоточном приложении
 Цель: В результате выполнения ДЗ вы сделаете решение задачи путем разделения её на потоки.
 В данном задании тренируются навыки создания многопоточных приложений.
