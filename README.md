@@ -6,7 +6,7 @@
 ```
 javac com/kbogova/matrices/*.java && java com/kbogova/matrices/Main
 ```
- -4 observe result in console
+ - 4 observe result in console
 
 -----------------------------------------------------------
 **Project description**
