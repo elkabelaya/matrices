@@ -1,7 +1,7 @@
 /*
  * Iterates in matrix cells
  */
-package com.kbogova.matrices;
+package com.elkabelaya.matrices;
 import java.util.concurrent.locks.ReentrantLock;
 /**
  *
@@ -35,9 +35,14 @@ public class MatricsIterator {
                 currentJ=0;
                 currentI++;
             }
-
-            Logger.debug ("increment by" + threadName + ", new value " + currentI +" " + currentJ );
-            return ( currentI > lastIndex)? null: new CellPosition (currentI,currentJ);
+            
+            if (currentI > lastIndex){
+                return null;
+            } else {
+                
+                Logger.getInstance().debug ( threadName + " counts Element i: " + currentI + ", j: " + currentJ );
+                return new CellPosition (currentI,currentJ);
+            }
 
         } catch (Exception ex) {
                 ex.printStackTrace();

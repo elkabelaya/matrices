@@ -1,7 +1,7 @@
 /*
  * Describes SquareMatrix
  */
-package com.kbogova.matrices;
+package com.elkabelaya.matrices;
 
 /**
  *
@@ -81,12 +81,12 @@ public class SquareMatrix {
         MatricsThread[] threads = new MatricsThread[inThreads];
         SquareMatrix resultMatrix = new SquareMatrix(this.size);
 
-        Logger.info ("----------------------");
-        Logger.info ("multiplyMatrixes: ");
-        Logger.info ("firstMatrix:\n " + this.toString());
-        Logger.info ("secondMatrix:\n " + matrixToMultiply.toString());
-        Logger.info ("using num of threads: " + inThreads);
-        Logger.info ("----------------------");
+         Logger.getInstance().info ("----------------------");
+         Logger.getInstance().info ("multiplyMatrixes: ");
+         Logger.getInstance().info ("firstMatrix:\n " + this.toString());
+         Logger.getInstance().info ("secondMatrix:\n " + matrixToMultiply.toString());
+         Logger.getInstance().info ("using num of threads: " + inThreads);
+         Logger.getInstance().info ("----------------------");
 
 
         resultMatrix.getIterator().start();
@@ -105,9 +105,9 @@ public class SquareMatrix {
             }
 
         }
-        Logger.info ("----------------------");
-        Logger.info ("result of multiplication:\n " +resultMatrix.toString());
-        Logger.info ("----------------------");
+        Logger.getInstance().info ("----------------------");
+        Logger.getInstance().info ("result of multiplication:\n " +resultMatrix.toString());
+        Logger.getInstance().info ("----------------------");
         return resultMatrix;
 
     }

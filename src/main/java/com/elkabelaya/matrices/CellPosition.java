@@ -1,7 +1,7 @@
 /*
  * Describes cell position, ie: Cij
  */
-package com.kbogova.matrices;
+package com.elkabelaya.matrices;
 
 /**
  *

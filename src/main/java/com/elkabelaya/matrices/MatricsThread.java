@@ -1,7 +1,7 @@
 /*
  * Thread which counts one of the cells when multiply
  */
-package com.kbogova.matrices;
+package com.elkabelaya.matrices;
 
 /**
  *
@@ -26,7 +26,7 @@ public class MatricsThread  extends Thread
     CellPosition position;
     Double countedValue;
 
-    Logger.debug ("run thread " + this.getName());
+    Logger.getInstance().debug ("run thread " + this.getName());
 
     while ( matrix.getIterator().hasNext() ) {
 
@@ -50,6 +50,6 @@ public class MatricsThread  extends Thread
 
       }
 
-      Logger.debug ("stop thread " + this.getName());
+       Logger.getInstance().debug ("stop thread " + this.getName());
   }
 }
